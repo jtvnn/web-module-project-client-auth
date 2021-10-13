@@ -5,6 +5,7 @@ import Login from './components/login';
 import PrivateRoute from './components/PrivateRoute';
 import FriendsList from './components/FriendsList';
 import AddFriendForm from './components/addFriendForm';
+import Logout from './components/Logout'
 
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
       </ul>
       <Switch>
       <PrivateRoute path='/friends/add-new' component={AddFriendForm} />
+      <PrivateRoute path="/logout" component={Logout} />
       <PrivateRoute path='/friends' component={FriendsList} />
         <Route path="/login">
           <Login/>
